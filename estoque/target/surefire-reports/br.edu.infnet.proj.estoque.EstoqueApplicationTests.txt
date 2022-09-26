@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: br.edu.infnet.proj.estoque.EstoqueApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.856 s <<< FAILURE! - in br.edu.infnet.proj.estoque.EstoqueApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flyway' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.flywaydb.core.Flyway]: Factory method 'flyway' threw exception; nested exception is java.lang.NoSuchMethodError: 'org.flywaydb.core.api.configuration.FluentConfiguration org.flywaydb.core.api.configuration.FluentConfiguration.ignoreMissingMigrations(boolean)'
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.flywaydb.core.Flyway]: Factory method 'flyway' threw exception; nested exception is java.lang.NoSuchMethodError: 'org.flywaydb.core.api.configuration.FluentConfiguration org.flywaydb.core.api.configuration.FluentConfiguration.ignoreMissingMigrations(boolean)'
+Caused by: java.lang.NoSuchMethodError: 'org.flywaydb.core.api.configuration.FluentConfiguration org.flywaydb.core.api.configuration.FluentConfiguration.ignoreMissingMigrations(boolean)'
+
